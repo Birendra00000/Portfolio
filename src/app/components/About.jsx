@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 const About = () => {
   return (
-    <section className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row h-[300px] top-5 relative">
+    <section className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row h-[300px] top-[45px] relative">
       <div className="w-[85%]  flex justify-center flex-col">
         <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[25px] mb-[3%]">
           About

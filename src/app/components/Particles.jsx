@@ -32,7 +32,7 @@ const ParticlesCover = () => {
     () => ({
       background: {
         color: {
-          value: "#14141c",
+          value: "#fff",
         },
       },
 
@@ -60,10 +60,10 @@ const ParticlesCover = () => {
       },
       particles: {
         color: {
-          value: "#fff",
+          value: "#14141c",
         },
         links: {
-          color: "#fff",
+          color: "#14141c",
           distance: 150,
           enable: true,
           opacity: 0.5,

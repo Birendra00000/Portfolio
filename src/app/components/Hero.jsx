@@ -24,10 +24,10 @@ const Hero = () => {
               I'm Birendra Bhusal
             </h1>
             <span className="flex items-center gap-3">
-              <h2 className="font-semibold lg:font-bold text-[26px] lg:text-[32px] capitalize text-white">
+              <h2 className="font-semibold lg:font-bold text-[26px] lg:text-[32px] capitalize text-black">
                 A
               </h2>
-              <span className="font-semibold lg:font-bold text-[22px] lg:text-[32px] capitalize text-white">
+              <span className="font-semibold lg:font-bold text-[22px] lg:text-[32px] capitalize text-black">
                 <Typewriter
                   options={{
                     strings: ["MernStack Developer"],

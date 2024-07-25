@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 export default function page() {
   return (
     <div>
-      <ParticlesCover />
+      {/* <ParticlesCover /> */}
       <Hero />
       <About />
       <Skills />

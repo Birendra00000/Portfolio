@@ -84,7 +84,7 @@ export default function Skills() {
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot color="primary" variant="outlined">
-                <IoServerOutline className="text-white " />
+                <IoServerOutline className="text-gray-500 " />
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent

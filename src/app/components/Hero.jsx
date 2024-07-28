@@ -16,18 +16,18 @@ const Hero = () => {
     //   </span>
     // </section>
     <>
-      <section className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row h-[300px] relative lg:mb-[10%]">
-        <div className="absolute top-[20%] lg:top-[30%] w-[85%] flex justify-between items-center flex-col lg:flex-row ">
+      <section className="w-full padding-2 flex flex-col md:flex-row mb-[25%] items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row h-[300px] relative lg:mb-[25%]">
+        <div className="absolute top-[20%] lg:top-[30%] w-[85%] flex justify-between items-center flex-col md:flex-row lg:flex-row ">
           <div className="h-full">
             <h4 className="bold-20">Hello,</h4>
-            <h1 className="bold-48 lg:bold-64 text-[26px] lg:text-[36px] text-blue-500">
+            <h1 className="bold-48 lg:bold-64 text-[24px] lg:text-[36px] text-blue-500 ">
               I'm Birendra Bhusal
             </h1>
             <span className="flex items-center gap-3">
-              <h2 className="font-semibold lg:font-bold text-[26px] lg:text-[32px] capitalize text-black">
+              <h2 className="font-semibold lg:font-bold text-[18px] lg:text-[32px] capitalize text-black">
                 A
               </h2>
-              <span className="font-semibold lg:font-bold text-[22px] lg:text-[32px] capitalize text-black">
+              <span className="font-semibold lg:font-bold text-[18px] lg:text-[32px] capitalize text-black">
                 <Typewriter
                   options={{
                     strings: ["MernStack Developer"],

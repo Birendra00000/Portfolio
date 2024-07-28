@@ -25,29 +25,32 @@ const Contact = () => {
 
   return (
     <div className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20  h-[500px] top-[90px] relative mb-[80px]">
-      <div className="w-[85%]  flex justify-center flex-col">
-        <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[25px] mb-[3%]">
+      <div className="w-[85%]  flex justify-center flex-col lg:pb-12">
+        <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[20px] md:text-[22px] lg:text-[25px] mb-[3%]">
           Contact
         </span>
         <form
           ref={form}
-          className="flex flex-col justify-center items-center"
+          className="flex flex-col justify-center items-center mt-12"
           onSubmit={sendEmail}
         >
-          <div className="flex flex-col justify-center gap-3 w-[500px]">
+          <div
+            className="flex flex-col justify-center gap-3 w-[80%] md:w-[500px] 
+              lg:w-[500px] "
+          >
             <input
               type="text"
               placeholder="Your Name"
               required
               name="from_name"
-              className="p-2 rounded-md outline-none bg-gray-100"
+              className="p-2 rounded-md outline-none bg-gray-100 text-[12px] lg:text-[16px] "
             />
             <input
               type="email"
               placeholder="Your Email"
               required
               name="from_email"
-              className="p-2 rounded-md outline-none bg-gray-100"
+              className="p-2 rounded-md outline-none bg-gray-100 text-[12px] lg:text-[16px] "
             />
             <textarea
               id=""
@@ -56,7 +59,8 @@ const Contact = () => {
               placeholder="Start Writing here...."
               required
               name="message"
-              className="outline-none w-[500px] resize-none  h-[240px] p-2 rounded-md overflow-auto shadow-none bg-gray-100"
+              className="outline-none w-full md:w-[500px] 
+              lg:w-[500px] resize-none  h-[240px] p-2 rounded-md overflow-auto shadow-none bg-gray-100 text-[12px] lg:text-[16px] "
             />
             <span className="w-full flex justify-start">
               <button

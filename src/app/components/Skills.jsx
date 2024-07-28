@@ -14,9 +14,9 @@ import Typography from "@mui/material/Typography";
 export default function Skills() {
   return (
     <>
-      <div className="mt-[10%] w-full flex flex-row lg:flex-col justify-center">
+      <div className="mt-[10%] w-full flex flex-col md:flex-col lg:flex-col justify-center">
         <div className=" flex justify-center w-full">
-          <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[25px] mb-[3%]">
+          <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 0 text-[20px] md:text-[22px] lg:text-[25px]  mb-[3%] ">
             Skills
           </span>
         </div>
@@ -30,18 +30,18 @@ export default function Skills() {
             </TimelineSeparator>
             <TimelineContent
               sx={{ py: "12px", px: 2 }}
-              className="flex justify-start"
+              className="flex justify-start "
             >
-              <span className="border border-white bg-white w-[400px] text-gray-700  flex flex-col rounded-md shadow-md p-3">
+              <span className="border border-white bg-white  min-w-[240px] max-w-[400px] text-gray-700  flex flex-col rounded-md shadow-md p-3">
                 <Typography
                   variant="h6"
                   component="span"
                   color={"black"}
-                  className="flex text-left text-gray-700 "
+                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
                 >
                   Frontend Development
                 </Typography>
-                <p className="flex text-left">
+                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
                   {" "}
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
                   molestiae commodi facilis minima eum sapiente nam numquam
@@ -62,16 +62,16 @@ export default function Skills() {
               sx={{ py: "12px", px: 2 }}
               className="flex justify-end"
             >
-              <span className="border border-white bg-white w-[400px] text-gray-700 flex flex-col rounded-md shadow-md p-3">
+              <span className="border border-white bg-white  text-gray-700  flex flex-col rounded-md shadow-lg p-3 min-w-[240px] max-w-[400px]">
                 <Typography
                   variant="h6"
                   component="span"
                   color={"black"}
-                  className="flex text-left text-gray-700 "
+                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
                 >
                   Backend Development
                 </Typography>
-                <p className="flex text-left">
+                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
                   {" "}
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
                   molestiae commodi facilis minima eum sapiente nam numquam
@@ -91,16 +91,16 @@ export default function Skills() {
               sx={{ py: "12px", px: 2 }}
               className="flex justify-start"
             >
-              <span className="border border-white bg-white w-[400px] text-gray-700 flex flex-col rounded-md shadow-md p-3">
+              <span className="border border-white bg-white  text-gray-700  flex flex-col rounded-md shadow-md p-3 min-w-[240px] max-w-[400px]">
                 <Typography
                   variant="h6"
                   component="span"
                   color={"black"}
-                  className="flex text-left text-gray-700 "
+                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
                 >
                   MERN Development
                 </Typography>
-                <p className="flex text-left">
+                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
                   {" "}
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
                   molestiae commodi facilis minima eum sapiente nam numquam

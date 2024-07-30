@@ -14,7 +14,10 @@ import Typography from "@mui/material/Typography";
 export default function Skills() {
   return (
     <>
-      <div className="mt-[10%] w-full flex flex-col md:flex-col lg:flex-col justify-center">
+      <div
+        className=" w-full flex flex-col md:flex-col lg:flex-col justify-center md:mt-[10%] lg:mt-0 "
+        id="skills"
+      >
         <div className=" flex justify-center w-full">
           <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 0 text-[20px] md:text-[22px] lg:text-[25px]  mb-[3%] ">
             Skills
@@ -83,7 +86,7 @@ export default function Skills() {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot color="primary" variant="outlined">
+              <TimelineDot>
                 <IoServerOutline className="text-gray-500 " />
               </TimelineDot>
             </TimelineSeparator>

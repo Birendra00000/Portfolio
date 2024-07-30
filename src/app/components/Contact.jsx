@@ -24,7 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20  h-[500px] top-[90px] relative mb-[80px]">
+    <div
+      className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20  h-[500px] top-[90px] relative mb-[80px]"
+      id="contact"
+    >
       <div className="w-[85%]  flex justify-center flex-col lg:pb-12">
         <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[20px] md:text-[22px] lg:text-[25px] mb-[3%]">
           Contact

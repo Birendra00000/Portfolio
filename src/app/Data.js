@@ -1,30 +1,4 @@
-export const NavLinks = [
-  {
-    href: "/",
-    key: "home",
-    labels: "Home",
-  },
-  {
-    href: "/about",
-    key: "about",
-    labels: "About",
-  },
-  {
-    href: "/skills",
-    key: "skills",
-    labels: "Skills",
-  },
-  {
-    href: "/portfolio",
-    key: "portfolio",
-    labels: "Portfolio",
-  },
-  {
-    href: "/contactus",
-    key: "contact",
-    labels: "Contact Us",
-  },
-];
+export const NavLinks = ["home", "about", "skills", "portfolio", "contact"];
 
 export const portfolio = [
   {

@@ -3,13 +3,26 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { NavLinks } from "../Data";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [active, setActive] = useState("home");
+  const [isScrolled, setIscrolled] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
+  };
+
+  //Function for Scrolling
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const marginTop = 0;
+      const scrollToY =
+        element.getBoundingClientRect().top + window.scrollY - marginTop;
+      window.scrollTo({ top: scrollToY, behaviour: "smooth" });
+    }
   };
 
   return (
@@ -24,13 +37,14 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex md:flex h-full gap-6 px-6 py-3">
-          {NavLinks.map((item) => (
+          {NavLinks.map((item, index) => (
             <Link
-              href={item.href}
-              key={item.key}
+              href={`/#${item}`} // Use a dynamic path or hash if linking to sections
+              key={index}
               className="flex items-center text-[15px] font-[500] text-black hover:bg-blue-500 hover:text-white px-4 py-1 rounded-full cursor-pointer transition-all duration-300"
+              onClick={() => scrollToSection(item)}
             >
-              {item.labels}
+              {item}
             </Link>
           ))}
         </ul>
@@ -58,14 +72,14 @@ const Navbar = () => {
               />
             </span>
             <ul className="flex flex-col p-4">
-              {NavLinks.map((item) => (
+              {NavLinks.map((item, i) => (
                 <Link
-                  href={item.href}
-                  key={item.key}
-                  className="text-lg font-medium text-black hover:bg-blue-500  hover:text-white p-1  lg:px-4 lg:py-2 rounded-full transition-all duration-300 w-[120px] flex justify-center"
+                  key={i}
+                  href={`/#${item}`} // Use a dynamic path or hash if linking to sections
+                  className="text-lg font-medium text-black hover:bg-blue-500 hover:text-white p-1 lg:px-4 lg:py-2 rounded-full transition-all duration-300 w-[120px] flex justify-center"
                   onClick={() => setClick(false)} // Close menu on link click
                 >
-                  {item.labels}
+                  {item}
                 </Link>
               ))}
             </ul>{" "}

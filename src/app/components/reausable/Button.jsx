@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ title, icon, varient, type }) => {
   return (
     <button
-      className={`flex items-center gap-2 justify-center rounded-full border py-1 px-2 cursor-pointer
+      className={`flex items-center gap-2 justify-center    cursor-pointer
       
         ${varient}`}
       type={type}

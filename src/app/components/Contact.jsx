@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "./reausable/Button";
 
 const Contact = () => {
   const form = useRef();
@@ -25,16 +26,28 @@ const Contact = () => {
 
   return (
     <div
-      className="w-full padding-2 flex flex-col items-center justify-center gap-20 py-10 pb-32 md:gap-28 lg:py-20  h-[500px] top-[90px] relative mb-[80px]"
-      id="contact"
+      className="w-full padding-2 flex flex-col items-center justify-center gap-20 pb-32 md:gap-28  h-[600px] top-[90px] relative mb-[150px] mt-[140px] sm:mt-[8%] lg:mt-0 lg:tracking-[0.2rem] text-[16px] tracking-[0.1rem]"
+      id="CONTACT"
     >
-      <div className="w-[85%]  flex justify-center flex-col lg:pb-12">
-        <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 text-[20px] md:text-[22px] lg:text-[25px] mb-[3%]">
-          Contact
-        </span>
+      <div className="w-[85%]  flex justify-center items-center flex-col lg:pb-12 mt-[200px]">
+        <div className="flex w-full justify-center -translate-y-[1px]">
+          <div className="w-3/4">
+            <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+          </div>
+        </div>
+        <div className="flex   my-5 lg:py-8">
+          <div className="flex justify-center  items-center">
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+            <span className="text-center text-white font-semibold lg:font-semibold  uppercase tracking-[0.2rem]  text-[18px] md:text-[18px] lg:text-[18px] lg:mb-0   bg- bg-blue-500 flex items-center rounded-lg h-[50px] p-1">
+              Contact
+            </span>
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          </div>
+        </div>
+
         <form
           ref={form}
-          className="flex flex-col justify-center items-center mt-12"
+          className="flex flex-col justify-center items-center mt-12 w-full"
           onSubmit={sendEmail}
         >
           <div
@@ -68,9 +81,9 @@ const Contact = () => {
             <span className="w-full flex justify-start">
               <button
                 type="submit"
-                className="rounded-md border py-1 px-2 cursor-pointer bg-red-500 shadow-md shadow-white  text-[12px] lg:text-[16px] text-white"
+                className="rounded-md border py-2 px-2 cursor-pointer bg-blue-500 shadow-md  text-[12px] lg:text-[16px] text-white font-semibold"
               >
-                Submit
+                Send Message
               </button>
             </span>
           </div>

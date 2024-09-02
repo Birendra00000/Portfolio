@@ -1,119 +1,77 @@
 import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { FaReact } from "react-icons/fa";
-import { IoServerOutline } from "react-icons/io5";
-import { FaNodeJs } from "react-icons/fa6";
-import Typography from "@mui/material/Typography";
 
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
+import { Skillsdata } from "../Data";
+import { skillsImage } from "../../../utils/SkillImage";
 export default function Skills() {
   return (
     <>
       <div
-        className=" w-full flex flex-col md:flex-col lg:flex-col justify-center md:mt-[10%] lg:mt-0 "
-        id="skills"
+        id="SKILLS"
+        className=" w-full flex justify-center mt-[16%] lg:mt-[6%]"
       >
-        <div className=" flex justify-center w-full">
-          <span className="text-center font-semibold lg:font-bold  uppercase tracking-[0.3rem] text-blue-500 0 text-[20px] md:text-[22px] lg:text-[25px]  mb-[3%] ">
-            Skills
-          </span>
+        <div className="relative z-50 border-t  border-[#111013] w-[85%]">
+          <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+
+          <div className="flex justify-center -translate-y-[1px]">
+            <div className="w-3/4">
+              <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+            </div>
+          </div>
+
+          <div className="flex justify-center my-5 lg:py-8">
+            <div className="flex  items-center">
+              <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+              <span
+                className="text-center text-white font-semibold lg:font-semibold  uppercase lg:tracking-[0.2rem]   md:text-[18px] lg:text-[18px] mb-[5%] lg:mb-0   bg- bg-blue-500 rounded-lg h-[50px] flex items-center p-1
+               text-[16px] tracking-[0.1rem]"
+              >
+                Skills
+              </span>
+              <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+            </div>
+          </div>
+
+          <div className="w-full my-12">
+            <Marquee
+              gradient={false}
+              speed={80}
+              pauseOnHover={true}
+              pauseOnClick={true}
+              delay={0}
+              play={true}
+              direction="left"
+            >
+              {Skillsdata &&
+                Skillsdata.map((skill) => (
+                  <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
+                    <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
+                      <div className="flex -translate-y-[1px] justify-center">
+                        <div className="w-3/4">
+                          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-center justify-center gap-3 p-6">
+                        <div className="h-8 sm:h-10">
+                          <Image
+                            src={skillsImage(skill)?.src}
+                            alt={skill}
+                            width={40}
+                            height={40}
+                            className="h-full w-auto rounded-lg"
+                          />
+                        </div>
+                        <p className="text-white text-sm sm:text-[16px]">
+                          {skill}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </Marquee>
+          </div>
         </div>
-        <Timeline position="alternate">
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot>
-                <FaReact className="text-blue-600 " />{" "}
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent
-              sx={{ py: "12px", px: 2 }}
-              className="flex justify-start "
-            >
-              <span className="border border-white bg-white  min-w-[240px] max-w-[400px] text-gray-700  flex flex-col rounded-md shadow-md p-3">
-                <Typography
-                  variant="h6"
-                  component="span"
-                  color={"black"}
-                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
-                >
-                  Frontend Development
-                </Typography>
-                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
-                  {" "}
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-                  molestiae commodi facilis minima eum sapiente nam numquam
-                  eveniet alias suscipit cum, eius quasi animi corrupti
-                  temporibus architecto nobis. Quaerat, dicta.
-                </p>
-              </span>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot>
-                <FaNodeJs className="text-green-600 " />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent
-              sx={{ py: "12px", px: 2 }}
-              className="flex justify-end"
-            >
-              <span className="border border-white bg-white  text-gray-700  flex flex-col rounded-md shadow-lg p-3 min-w-[240px] max-w-[400px]">
-                <Typography
-                  variant="h6"
-                  component="span"
-                  color={"black"}
-                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
-                >
-                  Backend Development
-                </Typography>
-                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
-                  {" "}
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-                  molestiae commodi facilis minima eum sapiente nam numquam
-                  eveniet alias suscipit cum, eius quasi animi corrupti
-                  temporibus architecto nobis. Quaerat, dicta.
-                </p>
-              </span>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot>
-                <IoServerOutline className="text-gray-500 " />
-              </TimelineDot>
-            </TimelineSeparator>
-            <TimelineContent
-              sx={{ py: "12px", px: 2 }}
-              className="flex justify-start"
-            >
-              <span className="border border-white bg-white  text-gray-700  flex flex-col rounded-md shadow-md p-3 min-w-[240px] max-w-[400px]">
-                <Typography
-                  variant="h6"
-                  component="span"
-                  color={"black"}
-                  className="flex text-left text-gray-700 text-[18px] md:text-22px "
-                >
-                  MERN Development
-                </Typography>
-                <p className="flex text-left text-[12px] md:text-[16px] lg:text-[16px]">
-                  {" "}
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-                  molestiae commodi facilis minima eum sapiente nam numquam
-                  eveniet alias suscipit cum, eius quasi animi corrupti
-                  temporibus architecto nobis. Quaerat, dicta.
-                </p>
-              </span>
-            </TimelineContent>
-          </TimelineItem>
-        </Timeline>
       </div>
     </>
   );

@@ -3,7 +3,10 @@ import Button from "./Button";
 
 const AboutCom = () => {
   return (
-    <div className=" flex justify-center items-center  font-normal w-full lg:w-[50%] lg:border-r lg:border-white sm:w-full  ">
+    <div
+      className=" flex justify-center items-center  font-normal w-full lg:w-[50%] lg:border-r lg:border-white sm:w-full "
+      id="ABOUT"
+    >
       <div className="flex items-center flex-col  lg:flex-row ">
         <Button
           varient="text-center text-white font-semibold lg:font-semibold  uppercase lg:tracking-[0.2rem] 

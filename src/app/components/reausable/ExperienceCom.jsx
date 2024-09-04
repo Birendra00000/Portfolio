@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const ExperienceCom = () => {
   return (
-    <div className="col-span-1 flex flex-col justify-center w-full  lg:w-[50%] mt-[16%] lg:mt-0">
+    <div className="col-span-1 flex flex-col justify-center w-full  lg:w-[50%] mt-[16%] lg:mt-0 ">
       <div className="flex items-center">
         <div className=" w-full flex flex-col justify-center ml-6">
           <span className="border border-white p-5 flex flex-col justify-center items-center rounded-md">

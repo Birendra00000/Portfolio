@@ -86,7 +86,7 @@ const ParticlesCover = () => {
           value: 140,
         },
         opacity: {
-          value: 0.4,
+          value: 0.2,
         },
         shape: {
           type: "circle",

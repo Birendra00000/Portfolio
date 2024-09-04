@@ -49,13 +49,15 @@ const Footer = () => {
             </a>
           </span>{" "}
           <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-            <Image
-              src={"/assests/github1.png"}
-              alt="icon--img"
-              width={24}
-              height={24}
-              className="w-6 h-6 bg-white rounded-full"
-            />{" "}
+            <a href="https://github.com/Birendra00000">
+              <Image
+                src={"/assests/github1.png"}
+                alt="icon--img"
+                width={24}
+                height={24}
+                className="w-6 h-6 bg-white rounded-full"
+              />{" "}
+            </a>
           </span>
         </div>
         <div

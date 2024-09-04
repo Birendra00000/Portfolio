@@ -60,12 +60,11 @@ const PortfolioData = ({ title, ImgUrl, description, link, github }) => {
           style={{ backgroundImage: `url(${ImgUrl})` }}
         ></div>
         {/* <Image src={ImgUrl} alt="img" width={300} height={300} quality={100} /> */}
-        \
-        <div className="px-6 py-3 text-white">
+        <div className="px-6 pb-3 text-white h-[200px]">
           <h3 className="bold-18 lg:bold-20 my-2 capitalize font-semibold text-[15px] lg:text-[18px] ">
             {title}
           </h3>
-          <p className="regular-14 text-[12px] lg:text-[14px] text-gray-20 mb-1">
+          <p className="regular-14 text-[10px] lg:text-[13px] text-gray-20 mb-1">
             {description}
           </p>
         </div>

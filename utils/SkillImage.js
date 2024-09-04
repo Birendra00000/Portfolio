@@ -8,8 +8,9 @@ import javascript from "/public/skills/javascript.svg";
 import materialui from "/public/skills/materialui.svg";
 import mongodb from "/public/skills/mongodb.svg";
 import nextjs from "/public/skills/nextjs.svg";
-import reactBootstrap from "/public/skills/reactBootstrap.svg";
+import reactbootstrap from "/public/skills/reactbootstrap.svg";
 import tailwindcss from "/public/skills/tailwindcss.svg";
+import redux from "/public/skills/redux.svg";
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -31,6 +32,9 @@ export const skillsImage = (skill) => {
     case "mongodb":
       return mongodb;
 
+    case "redux":
+      return redux;
+
     case "git":
       return git;
 
@@ -44,7 +48,7 @@ export const skillsImage = (skill) => {
       return expressjs;
 
     case "reactbootstrap":
-      return reactBootstrap;
+      return reactbootstrap;
 
     case "tailwind css":
       return tailwindcss;

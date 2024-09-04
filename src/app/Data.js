@@ -14,7 +14,7 @@ export const portfolio = [
     title: "QIWI Ecommerce",
     ImgUrl: "/assests/OIP.jpeg",
     description:
-      " Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!",
+      "Built a mobile-responsive eCommerce site for QIWI using React.js, CSS, Redux, and dummy JSON. Features include a Navbar, dynamic Slider for promotions, a Homepage for products, SingleProductPage, and Cart Page.",
   },
   {
     link: "https://amazon-clone-1-dusky.vercel.app/",
@@ -22,7 +22,7 @@ export const portfolio = [
     title: "Amazone Clone",
     ImgUrl: "/assests/OIP.jpeg",
     description:
-      " Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!",
+      "This site is like Amazon, with a homepage, product pages, shopping cart, and search bar. Browse products, add to cart, and search items. React handles the UI, while Redux is used as global state management.",
   },
   {
     title: "Todo Mern",
@@ -41,12 +41,13 @@ export const portfolio = [
 export const Skillsdata = [
   "HTML",
   "CSS",
+  "Tailwind css",
   "Javascript",
   "React",
   "Next JS",
   "Express js",
+  "Redux",
   "MongoDB",
-  "Tailwind css",
   "Git",
   "ReactBootstrap",
   "Figma",

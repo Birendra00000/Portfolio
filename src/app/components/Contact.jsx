@@ -26,10 +26,10 @@ const Contact = () => {
 
   return (
     <div
-      className="w-full padding-2 flex flex-col items-center justify-center gap-20 pb-32 md:gap-28  h-[600px] top-[90px] relative mb-[150px] mt-[140px] sm:mt-[8%] lg:mt-0 lg:tracking-[0.2rem] text-[16px] tracking-[0.1rem]"
+      className="w-full padding-2 flex flex-col items-center justify-center gap-20 pb-32 md:gap-28  h-[600px] top-[90px] relative mb-[150px] lg:mt-[8%] lg:tracking-[0.2rem] text-[16px] tracking-[0.1rem]"
       id="CONTACT"
     >
-      <div className="w-[85%]  flex justify-center items-center flex-col lg:pb-12 mt-[200px]">
+      <div className="w-[85%]  flex justify-center items-center flex-col lg:pb-12  ">
         <div className="flex w-full justify-center -translate-y-[1px]">
           <div className="w-3/4">
             <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />

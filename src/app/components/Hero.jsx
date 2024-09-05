@@ -32,18 +32,16 @@ const Hero = () => {
             </span>
             <div className="flex gap-4 justify-start sm:justify-start md:justify-start lg:justify-start  items-start my-4">
               <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <a href="https://github.com/Birendra00000">
-                  <Image
-                    src={"/assests/facebook.png"}
-                    alt="icon--img"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 "
-                  />{" "}
-                </a>
+                <Image
+                  src={"/assests/facebook.png"}
+                  alt="icon--img"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6 "
+                />{" "}
               </span>
-              <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <a href="https://www.linkedin.com/in/birendra-bhusal-814772262/">
+              <a href="https://www.linkedin.com/in/birendra-bhusal-814772262/">
+                <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                   <Image
                     src={"/assests/linkedin.png"}
                     alt="icon--img"
@@ -51,17 +49,19 @@ const Hero = () => {
                     height={24}
                     className="w-6 h-6 bg-white rounded-full"
                   />{" "}
-                </a>
-              </span>{" "}
-              <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <Image
-                  src={"/assests/github1.png"}
-                  alt="icon--img"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6 bg-white rounded-full"
-                />{" "}
-              </span>
+                </span>{" "}
+              </a>{" "}
+              <a href="https://github.com/Birendra00000">
+                <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                  <Image
+                    src={"/assests/github1.png"}
+                    alt="icon--img"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 bg-white rounded-full"
+                  />{" "}
+                </span>
+              </a>
             </div>
             <span className=" flex items-center gap-2 pt-6">
               <a href="https://app.sajilocv.com/cv/d44a0035-2fdd-40ce-abb5-015ccf25fb3d">
@@ -72,13 +72,15 @@ const Hero = () => {
                   varient="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  border border-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  p-2  text-white   shadow-md  text-[12px] lg:text-[16px] font-semibold rounded-full"
                 />{" "}
               </a>
-              <Button
-                title={"Contact"}
-                type="button"
-                icon="/assests/rightarrow.png"
-                varient=" text-white bg-[#0D1224]   shadow-md p-2  text-[12px] lg:text-[16px] font-semibold border border-white rounded-full"
-                id="CONTACT"
-              />
+              <a href="https://www.linkedin.com/in/birendra-bhusal-814772262/">
+                <Button
+                  title={"Contact"}
+                  type="button"
+                  icon="/assests/rightarrow.png"
+                  varient=" text-white bg-[#0D1224]   shadow-md p-2  text-[12px] lg:text-[16px] font-semibold border border-white rounded-full"
+                  id="CONTACT"
+                />
+              </a>
             </span>
           </div>{" "}
           <div>

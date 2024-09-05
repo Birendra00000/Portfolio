@@ -16,7 +16,9 @@ const AboutCom = () => {
         />
         <span className="flex flex-col gap-2 w-full items-start mr-6">
           {" "}
-          <p className="font-medium text-blue-300 text-[18px]">Who I am?</p>
+          <p className="font-medium text-blue-300 text-[18px] w-full">
+            Who I am?
+          </p>
           <p>
             My name is BIRENDRA BHUSAL. I am a professional and enthusiastic
             programmer in my daily life. I am a quick learner with a

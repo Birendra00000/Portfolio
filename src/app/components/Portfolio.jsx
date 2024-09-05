@@ -51,7 +51,7 @@ const PortfolioData = ({ title, ImgUrl, description, link, github }) => {
     "
     >
       <div
-        className=" w-[300px] rounded-2xl border overflow-hidden group  h-[420px] md:[450px] lg:h-[450px]
+        className=" w-[300px] rounded-2xl border overflow-hidden group   flex flex-col min-h-fit
     transition duration-500 ease-in  transform hover:-translate-y-1 hover:scale-110 bg-[#1b203e]"
       >
         <div
@@ -59,8 +59,7 @@ const PortfolioData = ({ title, ImgUrl, description, link, github }) => {
            overflow-visible"
           style={{ backgroundImage: `url(${ImgUrl})` }}
         ></div>
-        {/* <Image src={ImgUrl} alt="img" width={300} height={300} quality={100} /> */}
-        <div className="px-6 pb-3 text-white h-[200px]">
+        <div className="px-6 pb-3 text-white min-h-fit">
           <h3 className="bold-18 lg:bold-20 my-2 capitalize font-semibold text-[15px] lg:text-[18px] ">
             {title}
           </h3>
@@ -68,7 +67,7 @@ const PortfolioData = ({ title, ImgUrl, description, link, github }) => {
             {description}
           </p>
         </div>
-        <span className="flex justify-between px-6  gap-3">
+        <span className="flex justify-between  gap-3 pb-3 px-2">
           <a href={link} target="_blank" rel="noopener noreferrer">
             <Button
               type="button"

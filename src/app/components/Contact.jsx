@@ -51,7 +51,7 @@ const Contact = () => {
           onSubmit={sendEmail}
         >
           <div
-            className="flex flex-col justify-center gap-3 w-[80%] md:w-[500px] 
+            className="flex flex-col justify-center gap-3 w-full sm:w-[80%] md:w-[500px] 
               lg:w-[500px] "
           >
             <input

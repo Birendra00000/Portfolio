@@ -83,7 +83,7 @@ const ParticlesCover = () => {
           density: {
             enable: true,
           },
-          value: 140,
+          value: 120,
         },
         opacity: {
           value: 0.2,

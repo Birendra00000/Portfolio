@@ -33,7 +33,7 @@ export const portfolio = [
       " Chatty is a  online app built  with Next.js for both backend and frontend. Users can start individual chats and form groups. Next js handle authentication and pusher js is used for real time messaging.",
   },
   {
-    link: "https://amazon-clone-1-dusky.vercel.app/",
+    link: "portfolio-birendras-projects-6a1c03cb.vercel.app",
     github: "https://github.com/Birendra00000/Portfolio",
     title: "Portfolio",
     ImgUrl: "/assests/OIP.jpeg",

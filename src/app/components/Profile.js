@@ -27,7 +27,7 @@ const Profile = () => {
           </div>
           <div className="profile--content--name">
             <span className="name--wrapper">
-              Hello,I'M <span className="highlighted--name">Bibek</span>
+              Hello,I&apos;M <span className="highlighted--name">Bibek</span>
             </span>
           </div>
           <div className="profile--details">

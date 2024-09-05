@@ -1,6 +1,8 @@
 import React from "react";
 import { portfolio } from "../Data";
 import Button from "./reausable/Button";
+import Marquee from "react-fast-marquee";
+
 const Portfolio = () => {
   return (
     <div
@@ -25,17 +27,29 @@ const Portfolio = () => {
             <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           </div>
         </div>
-        <ul className="mt-12 grid gap-[5%] sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 w-full  justify-center md:justify-center sm:justify-center">
-          {portfolio.map((item) => (
-            <PortfolioData
-              key={item.title}
-              title={item.title}
-              ImgUrl={item.ImgUrl}
-              description={item.description}
-              link={item.link}
-              github={item.github}
-            />
-          ))}
+
+        {/* grid gap-[5%] sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 w-full  justify-center md:justify-center sm:justify-center */}
+        <ul className="w-[90%] my-12  ">
+          <Marquee
+            gradient={false}
+            speed={50}
+            pauseOnHover={true}
+            pauseOnClick={true}
+            delay={0}
+            play={true}
+            direction="left"
+          >
+            {portfolio.map((item) => (
+              <PortfolioData
+                key={item.title}
+                title={item.title}
+                ImgUrl={item.ImgUrl}
+                description={item.description}
+                link={item.link}
+                github={item.github}
+              />
+            ))}
+          </Marquee>
         </ul>
       </div>
     </div>
@@ -47,12 +61,12 @@ export default Portfolio;
 const PortfolioData = ({ title, ImgUrl, description, link, github }) => {
   return (
     <li
-      className="relative flex  justify-center flex-1 
+      className="relative flex  justify-center flex-1 px-4
     "
     >
       <div
         className=" w-[300px] rounded-2xl border overflow-hidden group   flex flex-col min-h-fit
-    transition duration-500 ease-in  transform hover:-translate-y-1 hover:scale-110 bg-[#1b203e]"
+    transition duration-500 ease-in  transform hover:-translate-y-1 hover:scale-90 bg-[#1b203e]"
       >
         <div
           className="bg-cover bg-center h-[170px] bg-no-repeat w-full

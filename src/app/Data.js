@@ -25,16 +25,28 @@ export const portfolio = [
       "This site is like Amazon, with a homepage, product pages, shopping cart, and search bar. Browse products, add to cart, and search items. React handles the UI, while Redux is used as global state management.",
   },
   {
-    title: "Todo Mern",
-    ImgUrl: "/assests/OIP.jpeg",
-    description:
-      " Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!",
-  },
-  {
+    link: "https://chatty-chi.vercel.app/",
+    github: "https://github.com/Birendra00000/Chatty",
     title: "Chatty",
     ImgUrl: "/assests/OIP.jpeg",
     description:
-      " Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!",
+      " Chatty is a  online app built  with Next.js for both backend and frontend. Users can start individual chats and form groups. Next js handle authentication and pusher js is used for real time messaging.",
+  },
+  {
+    link: "https://amazon-clone-1-dusky.vercel.app/",
+    github: "https://github.com/Birendra00000/Portfolio",
+    title: "Portfolio",
+    ImgUrl: "/assests/OIP.jpeg",
+    description:
+      " This Todo app uses Express, MongoDB, Next.js, and Tailwind CSS. It allows users to create and manage todos by priority, showing progress based on deadlines, with a modern, responsive interface.",
+  },
+  {
+    link: "https://todo-mern-drab-one.vercel.app/login",
+    github: "https://github.com/Birendra00000/TodoApp-using-MERN",
+    title: "Todo Mern",
+    ImgUrl: "/assests/OIP.jpeg",
+    description:
+      " Portfolio application is built with next js and tailwind CSS that helps you showcase your work ,about,experience,education, skills as a Frontend developer.",
   },
 ];
 
